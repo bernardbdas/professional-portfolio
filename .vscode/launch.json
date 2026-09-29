@@ -1,0 +1,201 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build All Resumes",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Build All Resumes",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Build",
+        "order": 1
+      }
+    },
+    {
+      "name": "Build ATS Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Build ATS Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Build",
+        "order": 2
+      }
+    },
+    {
+      "name": "Build Visual Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Build Visual Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Build",
+        "order": 3
+      }
+    },
+    {
+      "name": "Build Visual Resume Font",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Build Visual Resume Font",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Build",
+        "order": 4
+      }
+    },
+    {
+      "name": "Build Visual Resume All Fonts",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Build Visual Resume All Fonts",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Build",
+        "order": 5
+      }
+    },
+    {
+      "name": "Watch ATS Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Watch ATS Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Watch",
+        "order": 1
+      }
+    },
+    {
+      "name": "Watch Visual Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Watch Visual Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Watch",
+        "order": 2
+      }
+    },
+    {
+      "name": "Format File",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Format File",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Tools",
+        "order": 1
+      }
+    },
+    {
+      "name": "Format All Files",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Format All Files",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Tools",
+        "order": 2
+      }
+    },
+    {
+      "name": "Format ATS Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Format ATS Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Tools",
+        "order": 3
+      }
+    },
+    {
+      "name": "Format Visual Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Format Visual Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Tools",
+        "order": 4
+      }
+    },
+    {
+      "name": "Clean All Builds",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Clean All Builds",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Tools",
+        "order": 5
+      }
+    },
+    {
+      "name": "Clean ATS Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Clean ATS Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Tools",
+        "order": 6
+      }
+    },
+    {
+      "name": "Clean Visual Resume",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-e", "console.log('Task completed.')"],
+      "preLaunchTask": "Clean Visual Resume",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "presentation": {
+        "hidden": false,
+        "group": "Tools",
+        "order": 7
+      }
+    }
+  ]
+}

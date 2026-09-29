@@ -1,0 +1,117 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{
+  \titleItem{Better Pulse [WIP]} \quad [
+    \href{https://github.com/bernardbdas/better-pulse}{\underline{Source
+  Code}} ]   \\
+  \emph{Backend: FastAPI, Pytorch, SQL, Ollama, Docker}
+  \pipe
+  \emph{Frontend: React Native, Expo}
+}
+{2026}
+\resumeItemListStart
+\resumeItem{Better Pulse (formerly Pulse-FL) is an attempt to bring
+together edge intelligence and federated learning for healthcare domain.}
+\resumeItem{Better Pulse will use the MIT-BIH ECG Datasets to train a
+lightweight ECG model and finetune a pre-trained hugging face model.}
+\resumeItem{The frontend is a React Native application that will be
+  used to collect ECG data from users, train a local model and send the
+updated weights to the backend for processing.}
+\resumeItem{Will be implementing different federated aggregation
+algorithms to find out which one is suitable for this usecase.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{
+  \titleItem{ECG Data Explorer} \quad [
+    \href{https://github.com/bernardbdas/mit-bih}{\underline{Source
+  Code}} ]   \\
+  \emph{Tech Stack: wfdb, PyTorch, Streamlit, PEFT, Ollama, Python}
+}
+{2026}
+\resumeItemListStart
+\resumeItem{I used the MIT-BIH dataset to train a lightweight ECG
+model and finetune pre-trained models like Random Forest and 1D ResNet.}
+\resumeItem{The application is capable of analyzing the time-series
+  data and bring out meaningful inferences using a local LLM like
+gemma4 via Ollama.}
+\resumeItem{The visualizations used have fine grained controls like
+pause/playback and speed control using wfdb package.}
+\resumeItem{The model is wrapped in an API that can be used to infer
+  ECG data and return the predictions. This enables the user to bring
+  their own ECG/EEG data in .csv file format to get better explanations
+and inferences.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{
+  \titleItem{Mediapipe OpenCV Projects} \quad [
+    \href{https://github.com/bernardbdas/practice-mediapipe}{\underline{Source
+  Code}} ]   \\
+  \emph{Tech Stack: Mediapipe, OpenCV, Streamlit, WebRTC, Python}
+}
+{2026}
+\resumeItemListStart
+\resumeItem{Developed a realtime object detection and landmarking
+system using Mediapipe (newer Tasks API), OpenCV and Streamlit.}
+\resumeItem{The application supports hand tracking, finger counting
+and face detection.}
+\resumeItem{The application can be accessed via a web interface using
+WebRTC for video streaming.}
+\resumeItem{The application now also supports pose estimation and
+workout tracking .}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{
+  \titleItem{Brain Image Segmentation} \quad [
+    \href{https://github.com/bernardbdas/brain-tumor-detection.git}{\underline{Source
+  Code}} ]   \\
+  \emph{Tech Stack: Flask, TensorFlow, Keras, Numpy, Matplotlib}
+}
+{2026}
+\resumeItemListStart
+\resumeItem{Preprocessed MRI data with 3 tumor classes: 'meningioma',
+'glioma', 'pituitary' and finetuned a pretrained VGG16 backbone.}
+\resumeItem{The final model achieved 99.36\% accuracy on testing set,
+after fine-tuning using .}
+\resumeItem{The model can be accessed via a web interface using
+Flask and can predict tumor type from MRI image.}
+\resumeItem{WIP: Hosting the model using a NextJS frontend web
+interface evolving into a fullstack brain image segementation app.}
+\resumeItemListEnd
+
+%  \resumeProjectHeading
+%     {
+%         \titleItem{Distributed Real-Time RAG \& Recommendation Engine}\pipe
+%         \href{https://mediapipe-opencv-projects-701262404781.asia-south1.run.app/}{\underline{Live
+% Demo}} \pipe
+%         \href{https://github.com/bernardbdas/mediapipe-opencv-projects}{\underline{Source
+% Code}} \pipe  \\
+%         \emph{Tech Stack: PyTorch, Kafka, Spark, Triton,
+% LangChain, Kubernetes}
+%     }
+%     {2026}
+% \resumeItemListStart
+%     \resumeItem{Engineered a scalable streaming pipeline using
+% \textbf{Apache Kafka} and \textbf{PySpark} to process real-time
+% user interaction logs and document metadata.}
+%     \resumeItem{Trained and optimized a Two-Tower neural network in
+% \textbf{PyTorch} for personalized content retrieval, tracking
+% experiment lifecycles via \textbf{MLflow}.}
+%     \resumeItem{Deployed the recommendation model via
+% \textbf{NVIDIA Triton} (ONNX format) for low-latency inference,
+% while orchestrating a concurrent \textbf{Hugging Face} LLM using
+% \textbf{vLLM} and \textbf{LangChain} for document-grounded Q\&A.}
+%     \resumeItem{Containerized all microservices with
+% \textbf{Docker} and deployed the cluster using \textbf{Kubernetes}
+% on cloud infrastructure to ensure high availability and auto-scaling.}
+% \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\end{document}

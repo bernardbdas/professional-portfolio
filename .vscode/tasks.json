@@ -1,0 +1,168 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build All Resumes",
+      "type": "shell",
+      "command": "just build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build ATS Resume",
+      "type": "shell",
+      "command": "just build-ats",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Visual Resume",
+      "type": "shell",
+      "command": "just build-visual",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Visual Resume Font",
+      "type": "shell",
+      "command": "just build-visual-font ${input:font}",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build Visual Resume All Fonts",
+      "type": "shell",
+      "command": "just build-visual-all-fonts",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Watch ATS Resume",
+      "type": "shell",
+      "command": "just watch-ats",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Watch Visual Resume",
+      "type": "shell",
+      "command": "just watch-visual",
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Format All Files",
+      "type": "shell",
+      "command": "just format-all",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Format File",
+      "type": "shell",
+      "command": "just format-file ${input:file}",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Format ATS Resume",
+      "type": "shell",
+      "command": "just format-ats",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Format Visual Resume",
+      "type": "shell",
+      "command": "just format-visual",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean All Builds",
+      "type": "shell",
+      "command": "just clean",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean ATS Resume",
+      "type": "shell",
+      "command": "just clean-ats",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean Visual Resume",
+      "type": "shell",
+      "command": "just clean-visual",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "font",
+      "type": "promptString",
+      "description": "Enter font name (e.g., inter, sourcesanspro)"
+    },
+    {
+      "id": "file",
+      "type": "promptString",
+      "description": "Enter file path to format"
+    }
+  ]
+}

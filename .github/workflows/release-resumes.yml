@@ -1,0 +1,57 @@
+name: Build and Release
+
+on:
+  # Allows you to trigger the workflow manually from the GitHub Actions UI
+  workflow_dispatch:
+    inputs:
+      visual_font:
+        description: 'Font for the Visual Resume'
+        required: true
+        default: 'sourcesanspro'
+        type: choice
+        options:
+          - sourcesanspro
+          - officecodeprod
+          - sourceserifpro
+          - prata
+          - marcellus
+          - abrilfatface
+          - merriweather
+          - oxygen
+          - inter
+
+jobs:
+  build-and-release:
+    name: Build and Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Required for creating GitHub Releases
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Build Resumes (via TeX Live Docker)
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}:/workspace" \
+            -w /workspace \
+            texlive/texlive:latest \
+            sh -c "apt-get update && apt-get install -y curl && curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to /usr/local/bin && just build-ats && just build-visual-font ${{ github.event.inputs.visual_font }}"
+
+      - name: Generate Release Tag
+        id: tag
+        run: echo "date=$(date +'%Y.%m.%d-%H%M%S')" >> $GITHUB_OUTPUT
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: release-${{ steps.tag.outputs.date }}
+          name: Resume Release (${{ steps.tag.outputs.date }})
+          body: |
+            Automated resume release via GitHub Actions.
+            - **ATS Resume**: Included
+            - **Visual Resume Font**: ${{ github.event.inputs.visual_font }}
+          files: |
+            01-ats-resume/builds/bernard-resume.pdf
+            02-visual-resume/builds/bernard-resume-${{ github.event.inputs.visual_font }}.pdf

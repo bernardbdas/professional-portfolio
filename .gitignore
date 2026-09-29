@@ -1,0 +1,121 @@
+# ==============================================================================
+# OS Generated Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==============================================================================
+# IDEs and Code Editors
+# ==============================================================================
+.idea/
+# .vscode/
+.kilo/
+*.swp
+*.swo
+*~
+
+# ==============================================================================
+# Web Tooling & Dependencies (Node / Bun)
+# ==============================================================================
+node_modules/
+out/
+dist/
+*.tgz
+coverage/
+*.lcov
+logs/
+*.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.eslintcache
+.cache/
+*.tsbuildinfo
+
+# ==============================================================================
+# LaTeX build and auxiliary files
+# ==============================================================================
+
+# Core latex/pdflatex auxiliary files
+*.aux
+*.lof
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Intermediate documents
+*.dvi
+*.xdv
+*-converted-to.*
+
+# Bibliography auxiliary files (bibtex/biblatex/biber)
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Build tool auxiliary files
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Index & Glossary auxiliary files
+*.idx
+*.ilg
+*.ind
+*.ist
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.xdy
+*.acn
+*.acr
+*.nlo
+*.nls
+*.nlg
+
+# Presentation/Beamer auxiliary files
+*.nav
+*.snm
+*.vrb
+
+# TikZ/PGF & Minted auxiliary files
+*.table
+*.gnuplot
+*.pgf
+_minted*
+*.pyg
+
+# ==============================================================================
+# Project specific exceptions
+# ==============================================================================
+# Ignore all generated PDFs except in specific build directories
+**/*.pdf
+**/main.pdf
+!01-ats-resume/builds/*.pdf
+!02-visual-resume/builds/*.pdf
+!03-cover-letters/*/builds/*.pdf
