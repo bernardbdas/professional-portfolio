@@ -119,3 +119,4 @@ _minted*
 !01-ats-resume/builds/*.pdf
 !02-visual-resume/builds/*.pdf
 !03-cover-letters/*/builds/*.pdf
+!04-role-based-resumes/*/builds/*.pdf

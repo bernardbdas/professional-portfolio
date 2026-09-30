@@ -1,0 +1,75 @@
+\documentclass{main}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+
+% ==============================================================================
+% DYNAMIC FONT SELECTION
+% ==============================================================================
+% Defaults to 'sourcesanspro' unless overridden by the compiler (e.g.
+% via justfile)
+% Available Options:
+%   sourcesanspro, officecodeprod, sourceserifpro, prata, marcellus,
+%   abrilfatface, merriweather, oxygen, inter
+\providecommand{\myfontoption}{sourcesanspro}
+\fontoption{\myfontoption}
+
+\begin{document}
+
+% ==============================================================================
+% HEADER / CONTACT INFORMATION
+% ==============================================================================
+\namesection{Bernard}{Birendra Das}[Data Analyst]{%
+  \contactline%
+  {\href{mailto:bernardbdas@gmail.com}{bernardbdas@gmail.com}}%
+  {\href{https://linkedin.com/in/bernardbdas}{linkedin@bernardbdas}}%
+  {\href{https://github.com/bernardbdas}{github@bernardbdas}}%
+}
+
+% ==============================================================================
+% MAIN CONTENT (TWO COLUMNS: 70% / 25% + \hfill)
+% ==============================================================================
+
+% ------------------------------------------------------------------------------
+% LEFT COLUMN: Experience, Projects & Education (65% width)
+% ------------------------------------------------------------------------------
+\begin{minipage}[t]{0.65\textwidth}
+
+  % === Profile Summary ===
+  \section{Profile Summary}
+  \subfile{summary/main.tex}
+  \sectionsep
+
+  % === Work Experience ===
+  \section{Work Experience}
+  \subfile{experience/main.tex}
+  \sectionsep
+
+  % === Projects ===
+  \section{Projects}
+  \subfile{projects/main.tex}
+  \sectionsep
+
+  % === Education ===
+  \section{Education}
+  \subfile{education/main.tex}
+
+\end{minipage}%
+\hfill
+% ------------------------------------------------------------------------------
+% RIGHT COLUMN: Skills & Certifications (32% width)
+% ------------------------------------------------------------------------------
+\begin{minipage}[t]{0.32\textwidth}
+
+  % === Skills ===
+  \section{Skills}
+  \subfile{skills/main.tex}
+  \sectionsep
+
+  % === Certifications ===
+  \section{Certifications}
+  \subfile{certifications/main.tex}
+
+\end{minipage}
+
+\end{document}
